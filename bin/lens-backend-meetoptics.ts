@@ -1,10 +1,10 @@
 #!/usr/bin/env node
 import 'source-map-support/register';
 import * as cdk from 'aws-cdk-lib';
-import { LensBackendMeetopticsStack } from '../lib/lens-backend-meetoptics-stack';
+import { LensBackendStack } from '../lib/lens-backend-meetoptics-stack';
 
 const app = new cdk.App();
-new LensBackendMeetopticsStack(app, 'LensBackendMeetopticsStack', {
+new LensBackendStack(app, 'LensBackendStack', {
   /* If you don't specify 'env', this stack will be environment-agnostic.
    * Account/Region-dependent features and context lookups will not work,
    * but a single synthesized template can be deployed anywhere. */
